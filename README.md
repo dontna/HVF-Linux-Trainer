@@ -6,6 +6,12 @@ This project was created because a friend of mine said "What's the stupidest gam
 
 Buy the game here: https://store.steampowered.com/app/1208260/Hentai_Vs_Furries/
 
+# What options does the trainer have?
+Since this was a joke, I only added a few options; but feel free to add more yourself!
+
+1. GodMode
+2. Infinite Ammo
+3. Add 1,000 Money
 
 
 # How to build?
