@@ -123,18 +123,6 @@ int main(){
 
     bool godmodeActivated = false;
     bool infAmmoActivated = false;
-
-    // DEBUG OUTPUTS
-    printf("glCoreModuleBase: %lx\n", (uintptr_t)glCoreModuleBase);
-    printf("libCudaModuleBase: %lx\n", (uintptr_t)libCudaModuleBase);
-    printf("heatlhAddress: %lx\n", healthAddress);
-    printf("moneyAddress: %lx\n", moneyAddress);
-    printf("numOfWeaponsAddress %lx\n", numOfWeaponsAddress);
-    
-    for(int i = 0; i < vectorOfWeaponAmmoAddresses.size(); i++){
-        printf("weapon%dAmmoAddress: %lx\n", i, vectorOfWeaponAmmoAddresses.at(i));
-    }
-
     
     // Open the event controlling the keyboard, so we can check keypresses.
     int fd = open(KEYBOARD_EVENT.c_str(), O_RDONLY);
@@ -147,7 +135,7 @@ int main(){
     struct input_event ev;
     bool exitKeyPressed = false;
 
-    //UpdateTerminalPrompts(godmodeActivated, infAmmoActivated, numOfWeapons, numOfWeaponsAddress);
+    UpdateTerminalPrompts(godmodeActivated, infAmmoActivated);
     while (!exitKeyPressed) {
         if (read(fd, &ev, sizeof(ev)) < static_cast<ssize_t>(sizeof(ev))) {
             perror("Failed to read keyboard event. Try running with sudo?");
@@ -213,7 +201,7 @@ int main(){
             }
         }
 
-        usleep(250);
+        usleep(SLEEP_MILLISECONDS);
     }
 
     // Close the keyboard device and exit the program.
