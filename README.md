@@ -13,6 +13,8 @@ Since this was a joke, I only added a few options; but feel free to add more you
 2. Infinite Ammo
 3. Add 1,000 Money
 
+# Note
+My friend and I chose HvF because it was an offline game, with no real upside to cheating at it. I do not endorse or condone the use of my code being used to create cheats for online use.
 
 # How to build?
 
