@@ -16,6 +16,8 @@ Since this was a joke, I only added a few options; but feel free to add more you
 # Note
 My friend and I chose HvF because it was an offline game, with no real upside to cheating at it. I do not endorse or condone the use of my code being used to create cheats for online use.
 
+Also please note, this will only work if you are running HvF through Proton and not natively. I haven't tested Wine yet, so I can't be sure if this would work or not. For best results please run with Proton, any version will work.
+
 # How to build?
 
 The trainer uses g++ and make to build the program. Once you have make and g++ installed, just CD into the directory and do:
